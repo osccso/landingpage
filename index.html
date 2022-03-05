@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- metaheaders-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- using bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- importing font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <!-- bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- custom styles-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--    web page title-->
+    <title>Landing Page</title>
+</head>
+<body id=rootmain style="font-family: 'Rubik'; font-size: 14px;">
+    <div class="container-fluid">
+        <!-- navbar fixed top-->
+    <div class="container-fluid mx-sm-5 px-sm-5">
+        <nav class="navbar navbar-light navbar-expand-sm mx-sm-5 px-sm-5">
+            <div class="container-fluid mx-2">
+                <a class="navbar-brand " href="#"><img src="./images/logo-bookmark.svg" alt=""></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-top w-100 h-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" fill="">
+                    <div class="offcanvas-header justify-content-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                            <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"/>
+                        </svg>                      
+                        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Bookmark</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" id="iconClose" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body px-5">
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link  text-center fontsize" href="#features" id="nav-features">FEATURES</a>
+                                </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-center fontsize" href="#" id="nav-pricing">PRINCING</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-center fontsize" href="#bottomContainer" id="nav-contact">CONTACT</a>
+                            </li>
+                            <li class="nav-item loginTop fontsize" >
+                                <button id="loginButton">LOGIN</button>
+                                <!-- <a class="nav-link text-white" href="#" id="loginButtonNav">LOGIN</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span><i class="fab fa-twitter"></i></span>
+                    </div>
+              </div>
+            </div>
+        </nav>
+    </div>
+    
+    <!--some space-->
+    <div class="container-fluid my-5">
+    </div>
+    <!-- get it top-->  
+    <div class="container-fluid my-5" style="width: 100%;">
+        <div class="row g-0 d-flex align-items-center" >
+        <div class="container-fluid col-12 col-sm-6 order-2 order-sm-1 leftop1 d-flex flex-column align-items-start">
+            <h1 class="text-start">A Simple Bookmark  Manager</h1>
+            <p class="text-start fontsize" style="font-size: 18px;">A clean and simple interface to organize your favorite websites. Open a new
+                browser tab and see your sites load instantly. Try it for free.
+            </p>
+            <span>
+                <button class="getit fontsize" id="btnchrome">Get it on Chrome</button>
+                <button class="getit fontsize" id="btnfirefox">Get it on Firefox</button>
+            </span>
+        </div>
+        <div class="container-fluid col-12 col-sm-6 order-1 order-sm-2 position-relative d-flex">
+            <img class="img-fluid" src="./images/illustration-hero.svg" alt="" style="z-index : 1; width: 80%;">
+            <div style="height: 75%; width: 60%; background-color: hsl(231, 69%, 60%);position: absolute;top:30%;left: 50%;border-radius: 0 0 0 30%;z-index: -1;">
+            </div>
+        </div>
+        </div>
+    </div>
+      <!--features-->
+    <div id="features" class="features container-fluid d-flex flex-column pb-5">
+        <h1>Features</h1><br>
+        <p id="featurestext" class="col-9 col-sm-6 align-self-center text-start col-sm-3 fontsize" style="font-size: 1.5em;">Our aim is to make it quick and easy for you to acces you favorite websites. Your bookmarks
+            sync between your devices so you can access them on the go
+        </p>
+        
+    </div>
+    <!-- carousel-->
+    <div>
+        <button id="slidebtn1" class="slide-button fontsize slider-selected" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0">Simple Bookmarking</button>
+        <button id="slidebtn2" class="slide-button fontsize" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">Speedy Searching</button>
+        <button id="slidebtn3" class="slide-button fontsize" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">Easy Sharing</button>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="crs-item1">
+                <div class="row g-0 d-flex align-items-center" >
+                    <div class="container-fluid col-12 col-sm-6 order-1 order-sm-1 position-relative d-flex flex-row-reverse my-3">
+                        <img class="img-fluid" src="./images/illustration-features-tab-1.svg" alt="" style="z-index : 1; width: 70%;margin-bottom: 20%">
+                        <div style="height: 65%; width: 80%; background-color: hsl(231, 69%, 60%);position: absolute;top: 25%;right: 20%;border-radius: 0 0 30% 0%;z-index: -1;">
+                        </div>
+                    </div>
+                    <div class="container-fluid col-12 col-sm-6 order-2 order-sm-2 leftop1 d-flex flex-column align-items-start">
+                        <h1 class="text-start">Bookmark in one click</h1>
+                        <p class="text-start fontsize">Organize your bookmarks however you lik. Our simple drag-and-drop interface gives you complete
+                         control over how you manage your favorite sites.   
+                        </p>
+                        <span>
+                            <button class="fontsize" id="moreinfo">More info</button>
+                        </span>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" id="crs-item2">
+                <div class="row g-0 d-flex align-items-center" >
+                    <div class="container-fluid col-12 col-sm-6 order-1 order-sm-1 position-relative flex-row-reverse d-flex my-3">
+                        <img class="img-fluid" src="./images/illustration-features-tab-2.svg" alt="" style="z-index : 1; width: 70%;margin-bottom: 20%">
+                        <div style="height: 65%; width: 95%; background-color: hsl(231, 69%, 60%);position: absolute;top: 25%;right: 20%;border-radius: 0 0 30% 0%;z-index: -1;">
+                        </div>
+                    </div>
+                    <div class="container-fluid col-12 col-sm-6 order-2 order-sm-2 leftop1 d-flex flex-column align-items-start">
+                        <h1 class="text-start">Intelligent Search</h1>
+                        <p class="text-start fontsize">Our powerful search feature will help you find saved sites in no time at all.
+                            No need to trawl through all of your bookmarks.   
+                        </p>
+                        <span>
+                            <button class="fontsize" id="moreinfo">More info</button>
+                        </span>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" id="crs-item3">
+                <div class="row g-0 d-flex align-items-center" >
+                    <div class="container-fluid col-12 col-sm-6 order-1 order-sm-1 position-relative flex-row-reverse d-flex my-3">
+                        <img class="img-fluid" src="./images/illustration-features-tab-3.svg" alt="" style="z-index : 1; width: 70%;margin-bottom: 20%">
+                        <div style="height: 65%; width: 80%; background-color: hsl(231, 69%, 60%);position: absolute;top: 25%;right: 20%;border-radius: 0 0 30% 0%;z-index: -1;">
+                        </div>
+                    </div>
+                    <div class="container-fluid col-12 col-sm-6 order-2 order-sm-2 leftop1 d-flex flex-column align-items-start">
+                        <h1 class="text-start">Share your bookmarks</h1>
+                        <p class="text-start fontsize">Easily share your bookmarks and collections with others.
+                            Create a shareable link that you can send at the click of a button.   
+                        </p>
+                        <span>
+                            <button class="fontsize" id="moreinfo">More info</button>
+                        </span>
+                    </div>
+                </div>
+             </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <!--Download -->
+    <div class="features container-fluid d-flex flex-column pb-0">
+        <h1>Download the extension</h1><br>
+        <p class="lead col-8 align-self-center text-start col-sm-3 fontsize">We've got more browsers in the pipeline.
+            Please do let us know if you've got a favourite you'd like us to prioritize.
+        </p>        
+    </div>
+    <div class="d-flex container-fluid p-3 justify-content-center ms-5">
+        <div class="row ps-2 ms-sm-4 col-sm-6 col-8 align-self-center">
+            <!--Add to Chrome-->
+            <div class="shadow col-10 col-sm-3 order-sm-1 rounded-3 p-sm-3 m-sm-2 py-3 my-2 ms-0 px-1">
+                <img class="img-fluid mb-5" src="./images/logo-chrome.svg" alt="">
+                <h4>Add to Chrome</h4>
+                <p>Minimun version 62</p>
+                <img class="img-fluid w-100 mb-3" src="./images/bg-dots.svg" alt="">
+                <button class="download-extension fontsize">Add & Install Extension</button>
+            </div>
+            <!--Add to Firefox-->
+            <div class="shadow col-10 col-sm-3 order-sm-2 rounded-3 p-sm-3 m-sm-2 py-3 my-2 ms-0 px-1">
+                <img class="img-fluid mb-5"src="./images/logo-firefox.svg" alt="">
+                <h4>Add to Firefox</h4>
+                <p>Minimun version 55</p>
+                <img class="img-fluid w-100 mb-3" src="./images/bg-dots.svg" alt="">
+                <button class="download-extension fontsize">Add & Install Extension</button>
+            </div>
+            <!--Add to Opera-->
+            <div class="shadow col-10 col-sm-3 order-sm-3 rounded-3 p-sm-3 m-sm-2 py-3 my-2 ms-0 px-1">
+                <img class="img-fluid mb-5" src="./images/logo-opera.svg" alt="">
+                <h4>Add to Opera</h4>
+                <p>Minimun version 46</p>
+                <img class="img-fluid w-100 mb-3" src="./images/bg-dots.svg" alt="">
+                <button class="download-extension fontsize">Add & Install Extension</button>
+            </div>
+        </div>
+    </div>
+    <!-- Asked Questions-->
+    <div class="features container-fluid d-flex flex-column pb-0 my-5">
+        <h1>Frequently Asked Questions</h1><br>
+        <p class="lead col-8 align-self-center text-start col-sm-3 fontsize">Here are some of our FAQs. If you
+         have any other questions you'd like answered please feel free to email us.   
+        </p>        
+    </div>
+    <div class="d-flex container-fluid flex-column justify-content-center">
+        <div class="accordion accordion-flush d-flex flex-column col-10 col-sm-4 align-self-center" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed h2font" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  What is Bookmark?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body fontsize">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed h2font" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  How can I request a new browser?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body fontsize">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed h2font" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Is there a mobile app?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body fontsize">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed h2font" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What about other Chromium browsers?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body fontsize">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+                </div>
+              </div>
+          </div>
+          <button class="col-4 col-sm-1 fontsize" id="moreinfo" style="align-self:center">More info</button>
+    </div>
+     <!-- text input -->
+     <div class="d-flex flex-column justify-content-center mt-4 py-4" id="bottomContainer">
+         <p class="text-white fontsize">35,000+ ALREADY JOINED</p>
+         <h1 class="text-white mb-3">Stay up-to-date with what we're doing</h1>
+         <div>
+             <form action="">
+                <input class="fontsize" type="email" required>
+                <input type="submit" class="contactusbutton fontsize" value="Contact us">
+             </form>
+         </div>
+     </div>
+     <!-- Footer -->
+    <div class="row d-flex-inline justify-content-center g-0" id="footerdiv">
+            <ul class="d-flex justify-content-evenly flex-column flex-sm-row my-4 col-12 col-sm-6 order-sm-1" style="list-style: none;">
+                <li class="d-flex mb-4 mb-sm-0"> <img class="m-auto" src="./images/bookmark-2.svg" alt=""></li>
+                <li><a class="nav-link  text-center fontsize" id="features-f" href="#features">FEATURES</a></li>
+                <li><a class="nav-link  text-center fontsize" id="pricing-f" href="">PRICING</a></li>
+                <li><a class="nav-link  text-center fontsize" id="contact-f" href="#bottomContainer">CONTACT</a></li>
+            </ul>
+            <div class="col-12 col-sm-6 order-sm-2 d-flex justify-content-sm-end justify-content-center flex-row my-3 px-5">
+                <a class="nav-link  text-center" id="facebook-f" href=""><i class="bi bi-facebook h3 mx-4"></i></a>
+                <a class="nav-link  text-center" id="twitter-f" href=""><i class="bi bi-twitter h3 mx-4"></i></a>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </div>
+    <script src="./script.js"></script>
+    </body>
+</html>

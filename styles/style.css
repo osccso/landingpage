@@ -1,0 +1,158 @@
+html{
+    box-sizing: border-box;
+    display: flex;
+}
+body{
+    margin: 0;
+    padding: 2%;
+    width: 100%;
+    display: flex;
+}
+#rootmain{
+    position:static;
+    bottom: 0; top: 0; left: 0; right: 0;
+    box-sizing:border-box;
+    height:max-content;
+    width: 100vw;
+    padding: 0%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    overflow-x: hidden;
+}
+.nav-link.text-center{
+    color: black;
+}
+.nav-item.loginTop{
+    display: flex;
+}
+
+#loginButton, .contactusbutton {
+    background-color: hsl(0, 94%, 66%);
+    margin:auto;
+    padding: 0.3em 1.5em;
+    border: 0;
+    color: white;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#loginButton:hover, .contactusbutton:hover{
+    border: 1px solid hsl(0, 94%, 66%);
+    border-radius: 0.5em;
+    color:hsl(0, 94%, 66%);
+    background-color: white;
+}
+#nav-features:hover,#nav-pricing:hover,#nav-contact:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.offcanvas{
+    background-color: hsla(229, 31%, 21%, 0.7);
+}
+#btnfirefox{
+    background-color: rgba(128,128,128,0.1);
+    color: rgba(128,128,128,0.9);
+    border: 0;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.5em 1em;
+    margin-right: 2em;
+}
+#btnfirefox:hover{
+    background-color: white;
+    border: 0.2em solid  rgba(128,128,128,0.8);
+    color:rgba(128,128,128,0.9);
+}
+.download-extension {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border: 0;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.5em;
+}
+.download-extension:hover {
+    background-color: white;
+    border: 0.2em solid  hsla(231, 69%, 60%,0.5);
+    color:hsla(231, 69%, 60%,0.8) ;
+}
+#btnchrome, #moreinfo{
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border: 0;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.5em 1em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+}
+#btnchrome:hover,#moreinfo:hover{
+    background-color: white;
+    border: 0.2em solid  hsla(231, 69%, 60%,0.5);
+    color:hsla(231, 69%, 60%,0.8) ;
+}
+.leftop1{
+    padding: 10%;
+}
+.slide-button{
+    background-color: rgba(255,255,255,1);
+    border: 0;
+    border-bottom: 2px solid rgba(128,128,128,0.5);
+    margin-bottom: 1em;
+    padding: 1em 1.5em 1em 1em;
+}
+.slide-button:hover{
+    color: hsl(0, 94%, 66%);
+}
+#bottomContainer{
+    background-color: hsl(231, 69%, 60%);;
+}
+
+#footerdiv{
+    background-color: hsl(229, 31%, 21%);
+}
+#features-f,#pricing-f,#contact-f,#facebook-f,#twitter-f {
+    color: rgba(255,255,255,0.7);
+}
+#features-f:hover,#pricing-f:hover,#contact-f:hover,#facebook-f:hover,#twitter-f:hover {
+    color: hsl(0, 94%, 66%);
+}
+.fontsize {
+    font-size: 18px !important;
+}
+.h2font {
+    font-size: x-large ;
+}
+.slider-selected{
+    border-bottom: 4px solid hsl(0, 94%, 66%);
+    font-weight: 600;
+}
+@media screen and (max-width: 576px){
+    #nav-features {
+        color: white;
+    }
+    #nav-pricing {
+        color: white;
+    }
+    #nav-contact {
+        color: white;
+    }
+    .nav-item {
+        list-style-position: rgba(255,255,255,0.5);
+        border-top: 1px solid rgba(255,255,255,0.5);
+    }
+    .loginTop{
+        margin: 0 1em;
+    }
+    #loginButton {
+        border: 3px solid white;
+        background-color: rgba(255,255,255,0);
+        margin-top: 1em;
+        width: 100%;
+    }
+    #offcanvasNavbarLabel{
+        margin-left: 3%;
+        margin-right: 60%;
+    }
+}
