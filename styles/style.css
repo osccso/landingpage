@@ -128,6 +128,9 @@ body{
     border-bottom: 4px solid hsl(0, 94%, 66%);
     font-weight: 600;
 }
+#hidden-link {
+    display: none;
+}
 @media screen and (max-width: 576px){
     #nav-features {
         color: white;

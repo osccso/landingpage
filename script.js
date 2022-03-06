@@ -1,3 +1,16 @@
+const $form = document.querySelector("#form")
+const $buttonMailto = document.querySelector("#hidden-link")
+
+$form.addEventListener('submit',handleSubmit)
+
+function handleSubmit(event){
+    event.preventDefault()
+    const form = new FormData(this)
+    console.log(form.get('email'))
+    $buttonMailto.setAttribute('href',`mailto:bookmark@bookmark.com?subject=Information Request&body=Hi, this is ${form.get('email')} and I'd love to know more about your product !`)
+    $buttonMailto.click()
+}
+
 //carousel slide animation, when event triggers capture active slide(from) and selected slide(to)
 
 let carruselFcn = document.getElementById("carouselExampleIndicators")
